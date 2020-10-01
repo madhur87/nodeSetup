@@ -5,12 +5,10 @@ var app = express();
 
 mongoose.connect("localhost://apiDB/2700",{});
 
-app.get('/',(req,res)=>{
-  res.json({msg : "Hello World"});
-};
-
-
-
 app.listin(3000,()=>{
  console.log("server started");
 };
+           
+app.listen(3000,()=>{
+  console.log("server is started");
+}
